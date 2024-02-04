@@ -1,0 +1,40 @@
+a{
+  text-decoration:none;
+}
+
+@media (max-width: 991px) {
+  .carousel-multi-inner .carousel-item > div {
+    display: none;
+  }
+
+  .carousel-multi-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-multi-inner .carousel-item.active,
+.carousel-multi-inner .carousel-item-next,
+.carousel-multi-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 992px) {
+  .carousel-multi-inner .carousel-item-end.active {
+    transform: translateX(33.333333333%);
+    transition-duration: 0.5s;
+    z-index: 999;
+  }
+
+  .carousel-multi-inner .carousel-item-start.active {
+    transform: translateX(-33.333333333%);
+    transition-duration: 0.5s;
+    z-index: 999;
+  }
+}
+
+.carousel-multi-inner .carousel-item-end,
+.carousel-multi-inner .carousel-item-start {
+  transform: translateX(-0%);
+  transition-duration: 0s;
+}

@@ -1,0 +1,2194 @@
+CRITICAL - 2023-05-11 07:41:36 --> Call to undefined function set_value()
+in APPPATH\Views\registrarUsuario.php on line 59.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registrarUsuario', [], true)
+ 4 APPPATH\Controllers\Home.php(13): view('registrarUsuario')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->quienes_somos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 07:41:40 --> Call to undefined function set_value()
+in APPPATH\Views\registrarUsuario.php on line 59.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registrarUsuario', [], true)
+ 4 APPPATH\Controllers\Home.php(13): view('registrarUsuario')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->quienes_somos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 07:44:09 --> Call to undefined function set_value()
+in APPPATH\Views\registrarUsuario.php on line 59.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registrarUsuario', [], true)
+ 4 APPPATH\Controllers\Home.php(13): view('registrarUsuario')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->quienes_somos()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 07:45:23 --> syntax error, unexpected token ";"
+in APPPATH\Views\registrarUsuario.php on line 59.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registrarUsuario', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('registrarUsuario')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->quienes_somos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:10:45 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:10:45 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:11:12 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:11:12 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:14:11 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:14:11 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:14:20 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:14:20 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:14:57 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:14:57 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:15:13 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:15:13 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:15:18 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:15:18 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:15:31 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:15:31 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:18:14 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:18:14 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:18:18 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:18:18 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:18:34 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:18:34 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:18:41 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:18:41 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:18:53 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:18:53 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:20:04 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:20:04 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:21:48 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('sadasd@gmail.co...', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sadasd@gmail.co...', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:21:48 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'sadasd@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'sadasd@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'sadasd@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('sadasd@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sadasd@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:21:57 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('sadasd@gmail.co...', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sadasd@gmail.co...', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:21:57 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'sadasd@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'sadasd@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'sadasd@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('sadasd@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sadasd@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:22:31 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('sadasd@gmail.co...', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sadasd@gmail.co...', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:22:31 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'sadasd@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'sadasd@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'sadasd@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('sadasd@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'sadasd@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:22:48 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:22:48 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:27:58 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:27:58 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:28:04 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:28:04 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:31:16 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:31:16 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:31:21 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:31:21 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:31:32 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:31:32 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:31:51 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:31:51 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:32:20 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(27): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:32:20 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(27): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:32:42 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(27): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:32:42 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(27): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:32:48 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(27): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:32:48 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(27): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:33:06 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(27): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:33:06 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(27): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:33:10 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(27): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:33:10 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(27): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:33:17 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:33:17 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:33:37 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:33:37 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:33:45 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:33:45 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:33:54 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:33:54 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:34:14 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:34:14 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:36:38 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:36:38 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:36:59 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:36:59 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:37:29 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:37:29 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:37:42 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:37:42 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:37:49 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:37:49 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:37:57 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:37:57 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:38:02 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:38:02 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:38:09 --> mysqli_sql_exception: Table 'bd_acevedo_ignacio.users' doesn't exist in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', Array, Array)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:38:09 --> Table 'bd_acevedo_ignacio.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'qwe@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('qwe@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'qwe@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\registroController.php(26): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 09:39:20 --> Call to undefined method App\Models\usuariosModel::insert_id
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\registroController.php(28): CodeIgniter\Model->__call('insert_id', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 09:40:21 --> Call to undefined method App\Models\usuariosModel::insert_id
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\registroController.php(28): CodeIgniter\Model->__call('insert_id', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:41:41 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(37): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:41:41 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'auyyty\', \'aiyutityiyt\', \'qasaswe@gmail.com\', \'aasdsad\', \'$2y$10$XNgIo0klZ3W/Jj20fPSQveD7L9SpGzo/9Myf1mMUDPaLPSsIYz2zC\', \'no\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'auyyty\', \'aiyutityiyt\', \'qasaswe@gmail.com\', \'aasdsad\', \'$2y$10$XNgIo0klZ3W/Jj20fPSQveD7L9SpGzo/9Myf1mMUDPaLPSsIYz2zC\', \'no\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'auyyty\', \'aiyutityiyt\', \'qasaswe@gmail.com\', \'aasdsad\', \'$2y$10$XNgIo0klZ3W/Jj20fPSQveD7L9SpGzo/9Myf1mMUDPaLPSsIYz2zC\', \'no\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (:nombre:, :apellido:, :email:, :usuario:, :pass:, :baja:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\registroController.php(37): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:42:05 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(37): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:42:05 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'tyuytuytuytu\', \'iopiopoipi\', \'qaaaawe@gmail.com\', \'iopoiiopoipo\', \'$2y$10$N1haNTXOjzNPcO0qUWIFJOt9oeE7K1MlvhiP/CFY.j0GlJ5Iggme.\', \'no\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'tyuytuytuytu\', \'iopiopoipi\', \'qaaaawe@gmail.com\', \'iopoiiopoipo\', \'$2y$10$N1haNTXOjzNPcO0qUWIFJOt9oeE7K1MlvhiP/CFY.j0GlJ5Iggme.\', \'no\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'tyuytuytuytu\', \'iopiopoipi\', \'qaaaawe@gmail.com\', \'iopoiiopoipo\', \'$2y$10$N1haNTXOjzNPcO0qUWIFJOt9oeE7K1MlvhiP/CFY.j0GlJ5Iggme.\', \'no\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (:nombre:, :apellido:, :email:, :usuario:, :pass:, :baja:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\registroController.php(37): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 09:42:39 --> Call to undefined method App\Models\usuariosModel::insert_id
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\registroController.php(28): CodeIgniter\Model->__call('insert_id', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:44:00 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(37): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-11 09:44:00 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'kjjjjjjjjj\', \'hkhkhk\', \'qaaaawe@gmail.com\', \'hjkjkhjh\', \'$2y$10$gA.PDpuoKCORi8Qz1tElz.KJC7y6yKh7mqXHcTiZ6yxS1cbZlDfr.\', \'no\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'kjjjjjjjjj\', \'hkhkhk\', \'qaaaawe@gmail.com\', \'hjkjkhjh\', \'$2y$10$gA.PDpuoKCORi8Qz1tElz.KJC7y6yKh7mqXHcTiZ6yxS1cbZlDfr.\', \'no\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'kjjjjjjjjj\', \'hkhkhk\', \'qaaaawe@gmail.com\', \'hjkjkhjh\', \'$2y$10$gA.PDpuoKCORi8Qz1tElz.KJC7y6yKh7mqXHcTiZ6yxS1cbZlDfr.\', \'no\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (:nombre:, :apellido:, :email:, :usuario:, :pass:, :baja:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\registroController.php(37): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:44:35 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(37): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-11 09:44:35 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'kjjjjjjjjj\', \'hkhkhk\', \'qaasaswe@gmail.com\', \'hjkjkhjh\', \'$2y$10$EF2/hiKclyay2K946vWgvucH5qipsBVmlROEOyTunBYcdpiORjXSm\', \'no\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'kjjjjjjjjj\', \'hkhkhk\', \'qaasaswe@gmail.com\', \'hjkjkhjh\', \'$2y$10$EF2/hiKclyay2K946vWgvucH5qipsBVmlROEOyTunBYcdpiORjXSm\', \'no\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'kjjjjjjjjj\', \'hkhkhk\', \'qaasaswe@gmail.com\', \'hjkjkhjh\', \'$2y$10$EF2/hiKclyay2K946vWgvucH5qipsBVmlROEOyTunBYcdpiORjXSm\', \'no\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (:nombre:, :apellido:, :email:, :usuario:, :pass:, :baja:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\registroController.php(37): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 09:45:30 --> Call to undefined method App\Models\usuariosModel::insert_id
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\registroController.php(28): CodeIgniter\Model->__call('insert_id', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 09:45:39 --> Call to undefined method App\Models\usuariosModel::insert_id
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\registroController.php(28): CodeIgniter\Model->__call('insert_id', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 09:46:01 --> Call to undefined method App\Models\usuariosModel::insert_id
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\registroController.php(28): CodeIgniter\Model->__call('insert_id', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-11 09:53:51 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\registroController.php(37): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\registroController->store()
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+#11 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-05-11 09:53:51 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'ppppppppppppppppp\', \'ppppppppppppppppppppppppppp\', \'qqwe@gmail.com\', \'12323\', \'$2y$10$5Eht2hXHUSoeC.9ZMrgxOOpAKnEUeqS.PMkiYb6Wu9BW9BqTTdRjO\', \'no\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'ppppppppppppppppp\', \'ppppppppppppppppppppppppppp\', \'qqwe@gmail.com\', \'12323\', \'$2y$10$5Eht2hXHUSoeC.9ZMrgxOOpAKnEUeqS.PMkiYb6Wu9BW9BqTTdRjO\', \'no\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (\'ppppppppppppppppp\', \'ppppppppppppppppppppppppppp\', \'qqwe@gmail.com\', \'12323\', \'$2y$10$5Eht2hXHUSoeC.9ZMrgxOOpAKnEUeqS.PMkiYb6Wu9BW9BqTTdRjO\', \'no\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `pass`, `baja`) VALUES (:nombre:, :apellido:, :email:, :usuario:, :pass:, :baja:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\registroController.php(37): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 10:04:14 --> The route for "/Acevedo_ignacio/" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/Acevedo_ignacio/')
+ 2 SYSTEMPATH\Common.php(880): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\registroController.php(38): redirect('/Acevedo_ignacio/')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\registroController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\registroController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 10:20:21 --> Invalid file: "login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\loginController.php(11): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 10:26:18 --> Undefined array key "password"
+in APPPATH\Controllers\loginController.php on line 24.
+ 1 APPPATH\Controllers\loginController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\loginController.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 22:54:10 --> syntax error, unexpected token "<"
+in APPPATH\Views\principal.php on line 119.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('principal', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('principal')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 23:12:53 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\logoutController.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\logoutController.php', 10)
+ 2 APPPATH\Controllers\logoutController.php(10): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\logoutController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\logoutController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 23:12:56 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\logoutController.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\logoutController.php', 10)
+ 2 APPPATH\Controllers\logoutController.php(10): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\logoutController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\logoutController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 23:13:19 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\logoutController.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\logoutController.php', 10)
+ 2 APPPATH\Controllers\logoutController.php(10): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\logoutController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\logoutController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 23:16:20 --> session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Controllers\logoutController.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\logoutController.php', 12)
+ 2 APPPATH\Controllers\logoutController.php(12): session_destroy()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\logoutController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\logoutController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 23:19:52 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(667): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 APPPATH\Controllers\logoutController.php(10): session()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\logoutController->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\logoutController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 23:19:58 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(667): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 APPPATH\Controllers\logoutController.php(10): session()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\logoutController->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\logoutController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 23:20:05 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\system\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(667): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 APPPATH\Controllers\logoutController.php(10): session()
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\logoutController->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\logoutController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 23:24:45 --> session_regenerate_id(): Session ID cannot be regenerated when there is no active session
+in SYSTEMPATH\Session\Session.php on line 289.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_regenerate_id(): Session ID cannot be regenerated when there is no active session', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\system\\Session\\Session.php', 289)
+ 2 SYSTEMPATH\Session\Session.php(289): session_regenerate_id(true)
+ 3 APPPATH\Controllers\logoutController.php(11): CodeIgniter\Session\Session->stop()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\logoutController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\logoutController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 23:24:48 --> session_regenerate_id(): Session ID cannot be regenerated when there is no active session
+in SYSTEMPATH\Session\Session.php on line 289.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_regenerate_id(): Session ID cannot be regenerated when there is no active session', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\system\\Session\\Session.php', 289)
+ 2 SYSTEMPATH\Session\Session.php(289): session_regenerate_id(true)
+ 3 APPPATH\Controllers\logoutController.php(11): CodeIgniter\Session\Session->stop()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\logoutController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\logoutController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 23:24:56 --> session_regenerate_id(): Session ID cannot be regenerated when there is no active session
+in SYSTEMPATH\Session\Session.php on line 289.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_regenerate_id(): Session ID cannot be regenerated when there is no active session', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\system\\Session\\Session.php', 289)
+ 2 SYSTEMPATH\Session\Session.php(289): session_regenerate_id(true)
+ 3 APPPATH\Controllers\logoutController.php(11): CodeIgniter\Session\Session->stop()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\logoutController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\logoutController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 23:24:59 --> session_regenerate_id(): Session ID cannot be regenerated when there is no active session
+in SYSTEMPATH\Session\Session.php on line 289.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_regenerate_id(): Session ID cannot be regenerated when there is no active session', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\system\\Session\\Session.php', 289)
+ 2 SYSTEMPATH\Session\Session.php(289): session_regenerate_id(true)
+ 3 APPPATH\Controllers\logoutController.php(11): CodeIgniter\Session\Session->stop()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\logoutController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\logoutController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-11 23:29:51 --> Invalid file: "loginUsuario.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('loginUsuario.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('loginUsuario', [], true)
+ 3 APPPATH\Controllers\Home.php(17): view('loginUsuario')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->contactos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,226 @@
+CRITICAL - 2023-05-20 08:44:43 --> Undefined array key 0
+in APPPATH\Views\carritoView.php on line 182.
+ 1 APPPATH\Views\carritoView.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\carritoView.php', 182)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\carritoView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('carritoView', [], true)
+ 5 APPPATH\Controllers\carritoController.php(21): view('carritoView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:44:48 --> Undefined array key 1
+in APPPATH\Views\carritoView.php on line 182.
+ 1 APPPATH\Views\carritoView.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\carritoView.php', 182)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\carritoView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('carritoView', [], true)
+ 5 APPPATH\Controllers\carritoController.php(21): view('carritoView', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:52:09 --> Call to a member function has() on array
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:52:15 --> Call to a member function has() on array
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:52:52 --> Undefined array key "corbata"
+in APPPATH\Controllers\carritoController.php on line 36.
+ 1 APPPATH\Controllers\carritoController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "corbata"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:54:20 --> Call to a member function has() on array
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('2')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:55:15 --> Undefined array key "reloj"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reloj"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:55:18 --> Undefined array key "reloj"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reloj"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:55:38 --> Undefined array key "reloj"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reloj"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:55:46 --> Undefined array key "reloj"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reloj"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:56:04 --> Undefined array key "reloj 3"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reloj 3"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('5')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:56:07 --> Undefined array key "cantidad"
+in APPPATH\Controllers\carritoController.php on line 36.
+ 1 APPPATH\Controllers\carritoController.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cantidad"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 36)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:57:27 --> Undefined array key "reloj"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "reloj"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:57:29 --> Undefined array key "cantidad"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cantidad"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:57:47 --> Undefined array key "cantidad"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cantidad"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:58:49 --> Undefined array key "corbata"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "corbata"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:59:14 --> Undefined array key "corbata"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "corbata"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:59:15 --> Undefined array key "corbata"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "corbata"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:59:18 --> Undefined array key "billeter"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "billeter"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:59:25 --> Undefined array key "billeter"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "billeter"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 08:59:26 --> Undefined array key "corbata"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "corbata"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 09:00:09 --> Undefined array key "corbata"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "corbata"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 09:00:11 --> Undefined array key "billeter"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "billeter"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 09:00:13 --> Undefined array key "corbata"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "corbata"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 09:00:36 --> Undefined array key "corbata"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "corbata"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 09:00:38 --> Undefined array key "corbata"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "corbata"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 09:00:44 --> Undefined array key "corbata"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "corbata"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 09:00:46 --> Undefined array key "billeter"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "billeter"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 09:00:57 --> Undefined array key "billeter"
+in APPPATH\Controllers\carritoController.php on line 34.
+ 1 APPPATH\Controllers\carritoController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "billeter"', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\carritoController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->agregar('3')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 10:08:54 --> syntax error, unexpected token "}"
+in APPPATH\Views\carritoView.php on line 167.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('carritoView', [], true)
+ 3 APPPATH\Controllers\carritoController.php(21): view('carritoView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-20 10:13:20 --> syntax error, unexpected token "echo"
+in APPPATH\Views\carritoView.php on line 173.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('carritoView', [], true)
+ 3 APPPATH\Controllers\carritoController.php(21): view('carritoView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\carritoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\carritoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

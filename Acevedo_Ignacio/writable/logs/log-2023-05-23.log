@@ -1,0 +1,687 @@
+CRITICAL - 2023-05-23 07:31:49 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\productosController.php(65): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\productosController->borrar('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\productosController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:07:04 --> syntax error, unexpected token ","
+in APPPATH\Controllers\usuariosController.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\usuariosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\usuariosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\usuariosController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\usuariosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:07:05 --> syntax error, unexpected token ","
+in APPPATH\Controllers\usuariosController.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\usuariosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\usuariosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\usuariosController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\usuariosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:07:06 --> syntax error, unexpected token ","
+in APPPATH\Controllers\usuariosController.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\usuariosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\usuariosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\usuariosController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\usuariosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:07:08 --> syntax error, unexpected token ","
+in APPPATH\Controllers\usuariosController.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\usuariosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\usuariosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\usuariosController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\usuariosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:07:27 --> syntax error, unexpected token ","
+in APPPATH\Controllers\usuariosController.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Controllers\\usuariosController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\usuariosController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\usuariosController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\usuariosController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-23 09:08:05 --> mysqli_sql_exception: Column 'baja' cannot be null in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\usuariosController.php(48): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-23 09:08:05 --> Column 'baja' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuarios` (`apellido`, `nombre`, `email`, `usuario`, `pass`, `baja`, `isAdmin`) VALUES (\'a\', \'b\', \'m@gmail.coms\', \'c\', \'aaa\', NULL, \'no\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`apellido`, `nombre`, `email`, `usuario`, `pass`, `baja`, `isAdmin`) VALUES (\'a\', \'b\', \'m@gmail.coms\', \'c\', \'aaa\', NULL, \'no\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`apellido`, `nombre`, `email`, `usuario`, `pass`, `baja`, `isAdmin`) VALUES (\'a\', \'b\', \'m@gmail.coms\', \'c\', \'aaa\', NULL, \'no\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`apellido`, `nombre`, `email`, `usuario`, `pass`, `baja`, `isAdmin`) VALUES (:apellido:, :nombre:, :email:, :usuario:, :pass:, :baja:, :isAdmin:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\usuariosController.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-23 09:08:23 --> mysqli_sql_exception: Column 'baja' cannot be null in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\usuariosController.php(48): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-23 09:08:23 --> Column 'baja' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuarios` (`apellido`, `nombre`, `email`, `usuario`, `pass`, `baja`, `isAdmin`) VALUES (\'a\', \'b\', \'m@gmail.coms\', \'c\', \'aaa\', NULL, \'no\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`apellido`, `nombre`, `email`, `usuario`, `pass`, `baja`, `isAdmin`) VALUES (\'a\', \'b\', \'m@gmail.coms\', \'c\', \'aaa\', NULL, \'no\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`apellido`, `nombre`, `email`, `usuario`, `pass`, `baja`, `isAdmin`) VALUES (\'a\', \'b\', \'m@gmail.coms\', \'c\', \'aaa\', NULL, \'no\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`apellido`, `nombre`, `email`, `usuario`, `pass`, `baja`, `isAdmin`) VALUES (:apellido:, :nombre:, :email:, :usuario:, :pass:, :baja:, :isAdmin:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\usuariosController.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-23 09:08:28 --> mysqli_sql_exception: Column 'baja' cannot be null in C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\Acevedo_Ignacio\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Acevedo_Ignacio\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Acevedo_Ignacio\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Acevedo_Ignacio\app\Controllers\usuariosController.php(48): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+#9 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+#10 C:\xampp\htdocs\Acevedo_Ignacio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Acevedo_Ignacio\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-23 09:08:28 --> Column 'baja' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuarios` (`apellido`, `nombre`, `email`, `usuario`, `pass`, `baja`, `isAdmin`) VALUES (\'a\', \'b\', \'m@gmail.coms\', \'c\', \'aaa\', NULL, \'no\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`apellido`, `nombre`, `email`, `usuario`, `pass`, `baja`, `isAdmin`) VALUES (\'a\', \'b\', \'m@gmail.coms\', \'c\', \'aaa\', NULL, \'no\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`apellido`, `nombre`, `email`, `usuario`, `pass`, `baja`, `isAdmin`) VALUES (\'a\', \'b\', \'m@gmail.coms\', \'c\', \'aaa\', NULL, \'no\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`apellido`, `nombre`, `email`, `usuario`, `pass`, `baja`, `isAdmin`) VALUES (:apellido:, :nombre:, :email:, :usuario:, :pass:, :baja:, :isAdmin:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\usuariosController.php(48): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:15:18 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(63): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:16:25 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 295.
+ 1 APPPATH\Views\usuarios.php(295): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 295)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(63): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:17:21 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 295.
+ 1 APPPATH\Views\usuarios.php(295): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 295)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(63): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:19:04 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 295.
+ 1 APPPATH\Views\usuarios.php(295): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 295)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(63): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:20:05 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 295.
+ 1 APPPATH\Views\usuarios.php(295): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 295)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(63): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:23:46 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(61): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:23:59 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(61): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:25:03 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(61): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:26:49 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(61): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:27:41 --> Undefined variable $validation
+in APPPATH\Views\usuarios.php on line 247.
+ 1 APPPATH\Views\usuarios.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 247)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(31): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:27:48 --> Undefined variable $validation
+in APPPATH\Views\usuarios.php on line 247.
+ 1 APPPATH\Views\usuarios.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 247)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(31): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:28:22 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(61): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:30:34 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(61): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:32:44 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(62): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:33:58 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(62): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:34:03 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(62): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:34:25 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(62): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:34:29 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(62): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:35:47 --> Undefined variable $usuarios
+in APPPATH\Views\usuarios.php on line 299.
+ 1 APPPATH\Views\usuarios.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php', 299)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuarios', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(62): view('usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->insertar()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:43:08 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-23 09:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 09:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 09:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-23 09:44:47 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:45:15 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-23 09:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 09:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 09:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-23 09:45:38 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:46:22 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:47:32 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:48:16 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:49:13 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:50:59 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:51:03 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:51:06 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:51:12 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:52:34 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:52:37 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:52:50 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:52:53 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:54:24 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:54:31 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:55:22 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:55:26 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:55:39 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:56:12 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:56:21 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:56:24 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:56:26 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:57:05 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:57:13 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:57:20 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-23 09:59:05 --> Undefined variable $usuario
+in APPPATH\Views\actualizarUsuario.php on line 23.
+ 1 APPPATH\Views\actualizarUsuario.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\Acevedo_Ignacio\\app\\Views\\actualizarUsuario.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('actualizarUsuario', [], true)
+ 5 APPPATH\Controllers\usuariosController.php(99): view('actualizarUsuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\usuariosController->actualizar('6')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-23 10:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 10:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 10:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 10:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 10:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 10:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 10:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 10:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 10:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 10:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 10:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-23 10:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
