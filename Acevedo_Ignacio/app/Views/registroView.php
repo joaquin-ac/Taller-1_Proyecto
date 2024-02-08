@@ -47,6 +47,8 @@
                         <div class="card" style="border-radius: 15px;">
 
                             <div class="card-body p-5">
+                            <button onclick="location.href = '/Acevedo_ignacio/'" class="close"
+                                    style="margin-left:95%" data-dismiss="modal" aria-hidden="true">×</button>
                                 <h2 class="text-uppercase text-center mb-5">Crea una cuenta</h2>
                                 <?php if (isset($validation)): ?>
                                     <div class="alert alert-warning">
@@ -62,18 +64,18 @@
 
                                         <div class="form-outline form-group mb-4 col-lg-6 col-md-12">
                                             <input type="text" name="Nombre" placeholder="Nombre"
-                                                value="<?= set_value('nombre') ?>" class="form-control form-control-lg"
+                                                value="<?= set_value('Nombre') ?>" class="form-control form-control-lg"
                                                 required />
                                         </div>
 
                                         <div class="form-outline form-group mb-4 col-lg-6 col-md-12">
                                             <input type="text" name="Apellido" placeholder="Apellido"
-                                                value="<?= set_value('apellido') ?>"
+                                                value="<?= set_value('Apellido') ?>"
                                                 class="form-control form-control-lg" required />
                                         </div>
 
                                         <div class="form-outline form-group mb-4 col-lg-6 col-md-12">
-                                            <input type="text" name="Telefono" placeholder="Telefono"
+                                            <input type="number" name="Telefono" placeholder="Telefono"
                                                 value="<?= set_value('Telefono') ?>" class="form-control form-control-lg"
                                                 required />
                                         </div>
@@ -91,7 +93,7 @@
 
                                         <div class="form-outline form-group mb-4 col-lg-6 col-md-12">
                                             <input type="number" name="DNI" id="DNI"
-                                                placeholder="DNI"
+                                                placeholder="DNI" value="<?= set_value('DNI') ?>"
                                                 class="form-control form-control-lg" required />
                                         </div>
 
@@ -132,12 +134,14 @@
 
                                         <div class="form-outline form-group mb-4 col-lg-6 col-md-12">
                                             <input type="text" name="Provincia" placeholder="Provincia"
+                                            value="<?= set_value('Provincia') ?>"
                                                 class="form-control form-control-lg" required />
                                         </div>
 
                                         <div class="form-outline form-group mb-4 col-lg-6 col-md-12">
                                             <input type="text" name="Pais" id="Pais"
                                                 placeholder="Pais"
+                                                value="<?= set_value('Pais') ?>"
                                                 class="form-control form-control-lg" required />
                                         </div>
 

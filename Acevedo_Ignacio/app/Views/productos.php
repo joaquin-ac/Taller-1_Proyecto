@@ -221,7 +221,7 @@
                         <li class="nav-item dropdown me-5 my-auto pe-5">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                <?= session()->get('Apellido_usuario').", ".session()->get('Nombre_usuario') ?>
+                                <?= session()->get('Apellido_usuario') . ", " . session()->get('Nombre_usuario') ?>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="/Acevedo_ignacio/edit_perfil">Editar Perfil</a>
@@ -243,11 +243,12 @@
             <div class="table-wrapper">
                 <div class="table-title">
                     <div class="row">
-                        <?php if (isset($validation)): ?>
+                        <?php if (session()->getFlashdata('msg')): ?>
                             <div class="alert alert-warning">
-                                <?= $validation->listErrors() ?>
+                                <?= session()->getFlashdata('msg') ?>
                             </div>
                         <?php endif; ?>
+
                         <div class="col-sm-2">
                             <h2><b>Productos</b></h2>
                         </div>
@@ -321,16 +322,18 @@
                                 <td>
                                     <?= $producto['Nombre_categoria'] ?>
                                 </td>
-                                <td class="row">
-                                    <a href="/Acevedo_ignacio/editarProducto/<?= $producto['Id_producto'] ?>"
-                                        data-id="<?= $producto['Id_producto'] ?>" class="edit col-6" data-toggle=""><i
-                                            class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
-                                    <a href="#" data-delete_id="<?= $producto['Id_producto'] ?>" class="delete col-6"
-                                        data-toggle="" onclick="
+                                <td>
+                                    <div class="row">
+                                        <a href="/Acevedo_ignacio/editarProducto/<?= $producto['Id_producto'] ?>"
+                                            data-id="<?= $producto['Id_producto'] ?>" class="edit col-6" data-toggle=""><i
+                                                class="material-icons" data-toggle="tooltip" title="Edit"></i></a>
+                                        <a href="#" data-delete_id="<?= $producto['Id_producto'] ?>" class="delete col-6"
+                                            data-toggle="" onclick="
                                             if (confirm('¿esta seguro de querer eliminar el producto <?= $producto['Nombre_producto'] ?>?')){
                                                 window.location.replace('/Acevedo_ignacio/borrarProducto/<?= $producto['Id_producto'] ?>');
                                             }
                                         "><i class="material-icons" data-toggle="tooltip" title="Delete"></i></a>
+                                    </div>
                                 </td>
                             </tr>
                         <?php } ?>

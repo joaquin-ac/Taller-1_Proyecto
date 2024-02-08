@@ -80,7 +80,7 @@
     <title>Sartorial</title>
 </head>
 
-<body class="container">
+<body class="container mt-5">
 
     <div id="app" class="col-12">
 

@@ -266,9 +266,10 @@
         </div>
     </section>
 
-    <section class="paginacion">
+    <section class="paginacion mb-5 mt-5 mx-auto">
 
         <?= $pager->links(); ?>
+
     </section>
 
     <section class="mt-auto footer">

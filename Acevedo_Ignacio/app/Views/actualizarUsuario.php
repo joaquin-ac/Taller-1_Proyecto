@@ -18,7 +18,7 @@
 <body>
     <div id="editProductModal" class="container">
         <div class="row">
-            <div class="col">
+            <div class="col mt-5">
                 <?php if (isset($validation)): ?>
                     <div class="alert alert-warning">
                         <?= $validation->listErrors() ?>

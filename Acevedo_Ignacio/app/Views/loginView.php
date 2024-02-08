@@ -46,6 +46,8 @@
                         <div class="card" style="border-radius: 15px;">
 
                             <div class="card-body p-5">
+                                <button onclick="location.href = '/Acevedo_ignacio/'" class="close"
+                                    style="margin-left:95%" data-dismiss="modal" aria-hidden="true">×</button>
                                 <h2 class="text-uppercase text-center mb-5">Inicia Sesion</h2>
                                 <?php if (session()->getFlashdata('msg')): ?>
                                     <div class="alert alert-warning">

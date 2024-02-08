@@ -18,7 +18,7 @@
 <body>
     <div id="editProductModal" class="container">
         <div class="row">
-            <div class="col">
+            <div class="col mt-5">
                 <?php if (isset($validation)): ?>
                     <div class="alert alert-warning">
                         <?= $validation->listErrors() ?>
@@ -48,7 +48,7 @@
                             <label>Categoria</label>
                             <select name="Categoria" id="Categoria" class="form-control" required>
                                 <?php foreach ($categorias as $categoria) { ?>
-                                    <option value='<?= $categoria['Id_categoria'] ?>'>
+                                    <option value='<?= $categoria['Id_categoria'] ?>' <?= ($producto['Id_categoria'] == $categoria['Id_categoria'])? 'selected' :'' ?>>
                                         <?= $categoria['Nombre_categoria'] ?>
                                     </option>
                                 <?php } ?>

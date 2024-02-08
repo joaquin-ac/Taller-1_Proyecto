@@ -150,7 +150,7 @@
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
                                         <input type="<?= session()->get("Nombre_usuario") ? "hidden":"text" ?>" id="nombre" name="nombre" class="form-control shadow"
-                                            placeholder="Tu Nombre" value="<?php echo session()->get('Nombre_usuario') ?>"
+                                            placeholder="Tu Nombre" value="<?= session()->get('Nombre_usuario')? : (isset($validation)? set_value('nombre') : "") ?>"
                                             required>
                                         <label for="name" class=""></label>
                                     </div>
@@ -161,7 +161,7 @@
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
                                         <input type="<?= session()->get("Apellido_usuario") ? "hidden":"text" ?>" id="apellido" name="apellido" class="form-control shadow"
-                                            placeholder="Tu Apellido" value="<?php echo session()->get('Apellido_usuario') ?>"
+                                            placeholder="Tu Apellido" value="<?= session()->get('Apellido_usuario')? : (isset($validation)? set_value('apellido') : "") ?>"
                                             required>
                                         <label for="email" class=""></label>
                                     </div>
@@ -176,7 +176,7 @@
                                 <div class="col-md-12">
                                     <div class="md-form mb-0">
                                         <input type="<?= session()->get("Correo_usuario") ? "hidden":"email" ?>" id="email" name="email" class="form-control shadow"
-                                            placeholder="Email" value="<?php echo session()->get('Correo_usuario') ?>" required>
+                                            placeholder="Email" value="<?= session()->get('Correo_usuario')? : (isset($validation)? set_value('email') : "") ?>" required>
                                         <label for="subject" class=""></label>
                                     </div>
                                 </div>
@@ -188,7 +188,7 @@
                                 <div class="col-md-12">
                                     <div class="md-form mb-0">
                                         <input type="text" id="asunto" name="asunto" class="form-control shadow"
-                                            placeholder="Asunto" required>
+                                            placeholder="Asunto" value="<?= isset($validation)? set_value('asunto') : "" ?>" required >
                                         <label for="subject" class=""></label>
                                     </div>
                                 </div>
@@ -203,7 +203,7 @@
 
                                     <div class="md-form">
                                         <textarea placeholder="Tu Mensaje" type="text" id="mensaje" name="mensaje"
-                                            rows="2" class="form-control md-textarea shadow" required></textarea>
+                                            rows="2" class="form-control md-textarea shadow" required><?= isset($validation)? set_value('mensaje') : "" ?></textarea>
                                         <label for="message"></label>
                                     </div>
 
