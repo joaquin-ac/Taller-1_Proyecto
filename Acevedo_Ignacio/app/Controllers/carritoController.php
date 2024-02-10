@@ -147,7 +147,7 @@ class carritoController extends Controller
             $this->actualizarStock($session['productosCarrito'], $idFactura);
 
             $facturasModel->join('usuario', 'factura.Id_usuario = usuario.Id_usuario','LEFT');
-            $facturasModel->join('domicilio','factura.Id_domicilio = usuario.Id_domicilio', 'LEFT');
+            $facturasModel->join('domicilio','factura.Id_domicilio = domicilio.Id_domicilio', 'LEFT');
             $detalleFactura->join('producto','detallefactura.Id_producto = producto.Id_producto', 'LEFT');
 
             $data['facturacion'] = [

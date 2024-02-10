@@ -8,7 +8,7 @@ class loginController extends Controller
     public function index()
     {
         helper(['form']);
-        echo view('loginView');
+        return view('loginView');
     } 
   
     public function loginAuth()
@@ -17,7 +17,7 @@ class loginController extends Controller
         $userModel = new usuariosModel();
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('pass');
-        
+        helper(['form']);
         $data = $userModel->where('Correo_usuario', $email)->first();
         
         if($data){
@@ -28,8 +28,8 @@ class loginController extends Controller
             if($authenticatePassword){
 
                 if($data['Activo_usuario'] == 'no'){
-                    $session->setFlashdata('msg', 'Este usuario se encuentra dado de baja.');
-                    return $this->response->redirect('/Acevedo_ignacio/login');
+                    $session->setFlashdata('login', 'Este usuario se encuentra dado de baja.');
+                    return view('loginView');
                 }
 
                 $admin = false;
@@ -53,12 +53,12 @@ class loginController extends Controller
                 return $this->response->redirect('/Acevedo_ignacio');
 
             }else{
-                $session->setFlashdata('msg', 'La contraseña es incorrecta.');
-                return $this->response->redirect('/Acevedo_ignacio/login');
+                $session->setFlashdata('login', 'La contraseña es incorrecta.');
+                return view('loginView');
             }
         }else{
-            $session->setFlashdata('msg', 'El email no esta registrado.');
-            return $this->response->redirect('/Acevedo_ignacio/login');
+            $session->setFlashdata('login', 'El email no esta registrado.');
+            return view('loginView');
         }
     }
 }

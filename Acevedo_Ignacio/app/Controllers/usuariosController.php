@@ -98,7 +98,7 @@ class usuariosController extends Controller
         $rol = $this->request->getVar('Rol');
         $this->usuario->where('Id_usuario', $id)->set('Activo_usuario', $activo)->update();
         $this->usuario->where('Id_usuario', $id)->set('Id_rol', $rol)->update();
-
+        session()->setFlashdata('msg', 'Usuario correctamente actualizado.');
         return $this->response->redirect('/Acevedo_ignacio/usuarios');
     }
 
@@ -110,6 +110,7 @@ class usuariosController extends Controller
         }
 
         $data['usuario'] = $this->usuario->where('Id_usuario', $id)->set('Activo_usuario', 'no')->update();
+        session()->setFlashdata('msg', 'Usuario correctamente dado de baja.');
         return $this->response->redirect('/Acevedo_ignacio/usuarios');
     }
 

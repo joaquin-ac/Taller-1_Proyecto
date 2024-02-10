@@ -24,8 +24,8 @@
                         <?= $validation->listErrors() ?>
                     </div>
                 <?php endif; ?>
-                <button class="close" onclick="location.href = '/Acevedo_ignacio/usuarios'"
-                    aria-hidden="true">×</button>
+                <button class="close" onclick="location.href = '/Acevedo_ignacio'"
+                    aria-hidden="true">×</button>    
                 <form method="post" action="/Acevedo_ignacio/actualizarUsuario/<?= $usuario['Id_usuario'] ?>">
                     <div class="modal-header">
                         <h4 class="modal-title">Editar Usuario</h4>
@@ -61,6 +61,11 @@
                             <label>Email</label>
                             <input type="email" name="email" id="email" class="form-control" readonly
                                 value="<?= $usuario['Correo_usuario'] ?>" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Id Domicilio</label>
+                            <input type="email" name="email" id="email" class="form-control" readonly
+                                value="<?= $usuario['Id_domicilio'] ?>" required>
                         </div>
                         <div class="form-group">
                             <label>Activo - si/no</label>

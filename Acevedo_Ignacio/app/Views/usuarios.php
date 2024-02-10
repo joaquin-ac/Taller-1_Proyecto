@@ -249,6 +249,11 @@
                                 <?= $validation->listErrors() ?>
                             </div>
                         <?php endif; ?>
+                        <?php if (session()->getFlashdata('msg')): ?>
+                            <div class="alert alert-warning">
+                                <?= session()->getFlashdata('msg') ?>
+                            </div>
+                        <?php endif; ?>
                         <div class="col-sm-2">
                             <h2><b>Usuarios</b></h2>
                         </div>

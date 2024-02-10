@@ -63,7 +63,7 @@ class registroController extends Controller
             return $this->response->redirect('/Acevedo_ignacio/login');
         }else{
             $data['validation'] = $this->validator;
-            echo view('registroView',$data);
+            return view('registroView',$data);
         }
     }
     

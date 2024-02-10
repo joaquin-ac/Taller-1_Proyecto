@@ -50,7 +50,7 @@ class editarUserController extends Controller
 
         if ($this->validate($rules)) {
 
-            if  ($domicilio['Calle_domicilio'] != $this->request->getVar('Calle') || $domicilio['Numero_domicilio'] != $this->request->getVar('Numero')){
+            if  ($domicilio['Calle_domicilio'] != $this->request->getVar('Calle') || $domicilio['Numero_domicilio'] != $this->request->getVar('Numero') || $domicilio['Codigo_postal_domicilio'] != $this->request->getVar('Codigo_postal') || $domicilio['Localidad_domicilio'] != $this->request->getVar('Localidad') || $domicilio['Provincia_domicilio'] != $this->request->getVar('Provincia') || $domicilio['Pais_domicilio'] != $this->request->getVar('Pais')){
 
                 $dataDomicilio = [
                     'Calle_domicilio'     => $this->request->getVar('Calle'),

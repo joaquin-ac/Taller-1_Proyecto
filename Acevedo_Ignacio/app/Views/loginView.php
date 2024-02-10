@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesion</title>
 
-    <link href="././assets/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="">
+    <link href="<?= base_url()?>/assets/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="">
 
     <style>
         .gradient-custom-3 {
@@ -49,15 +49,15 @@
                                 <button onclick="location.href = '/Acevedo_ignacio/'" class="close"
                                     style="margin-left:95%" data-dismiss="modal" aria-hidden="true">×</button>
                                 <h2 class="text-uppercase text-center mb-5">Inicia Sesion</h2>
-                                <?php if (session()->getFlashdata('msg')): ?>
+                                <?php if (session()->getFlashdata('login')): ?>
                                     <div class="alert alert-warning">
-                                        <?= session()->getFlashdata('msg') ?>
+                                        <?= session()->getFlashdata('login') ?>
                                     </div>
                                 <?php endif; ?>
                                 <form action="/Acevedo_ignacio/login/loginAuth" method="post">
 
                                     <div class="form-outline form-group mb-4">
-                                        <input type="email" name="email" placeholder="Email"
+                                        <input type="email" name="email" id="email" placeholder="Email"
                                             value="<?= set_value('email') ?>" class="form-control form-control-lg"
                                             required />
                                     </div>
@@ -87,7 +87,7 @@
         </div>
     </section>
 
-    <script src="././assets/js/bootstrap.bundle.min.js" integrity="" cross origin=""></script>
+    <script src="<?= base_url()?>/assets/js/bootstrap.bundle.min.js" integrity="" cross origin=""></script>
 
 </body>
 

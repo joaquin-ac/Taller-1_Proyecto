@@ -338,9 +338,9 @@
             <div class="table-wrapper">
                 <div class="table-title">
                     <div class="row">
-                        <?php if (isset($validation)): ?>
+                        <?php if (session()->getFlashdata('error')): ?>
                             <div class="alert alert-warning">
-                                <?= $validation->listErrors() ?>
+                                <?= session()->getFlashdata('error') ?>
                             </div>
                         <?php endif; ?>
                         <div class="col-sm-2">

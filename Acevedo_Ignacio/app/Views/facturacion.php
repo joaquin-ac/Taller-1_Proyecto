@@ -124,7 +124,7 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <h5>codigo Potal:</h5>
+                        <h5>Codigo Potal:</h5>
                     </div>
                     <div class="col-6">
                         <h5>

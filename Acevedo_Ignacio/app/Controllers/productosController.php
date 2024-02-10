@@ -177,7 +177,7 @@ class productosController extends Controller
                 'Activo_producto' => $this->request->getVar('Activo'),
             ];
             $this->producto->update($id, $data);
-            session()->setFlashdata('msg', 'producto correctamente actualizado');
+            session()->setFlashdata('msg', 'Producto correctamente actualizado.');
             return $this->response->redirect('/Acevedo_ignacio/productos');
         } else {
             $data['validation'] = $this->validator;
@@ -195,6 +195,7 @@ class productosController extends Controller
         }
 
         $data['producto'] = $this->producto->where('Id_producto', $id)->set('Activo_producto', 'no')->update();
+        session()->setFlashdata('msg', 'Producto correctamente dado de baja.');
         return $this->response->redirect('/Acevedo_ignacio/productos');
     }
 
