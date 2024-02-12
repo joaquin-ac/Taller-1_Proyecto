@@ -25,11 +25,11 @@ class consultasController extends Controller
             $consultasModel = new consultasModel();
             
             $data = [
-                'Nombre_consulta'     => $this->request->getVar('nombre'),
-                'Apellido_consulta'    => $this->request->getVar('apellido'),
-                'Correo_consulta'    => $this->request->getVar('email'),
-                'Asunto_consulta'    => $this->request->getVar('asunto'),
-                'Mensaje_consulta' => $this->request->getVar('mensaje'),
+                'Nombre_consulta'     => trim($this->request->getVar('nombre')),
+                'Apellido_consulta'    => trim($this->request->getVar('apellido')),
+                'Correo_consulta'    => trim($this->request->getVar('email')),
+                'Asunto_consulta'    => trim($this->request->getVar('asunto')),
+                'Mensaje_consulta' => trim($this->request->getVar('mensaje')),
                 'Visto_consulta' => 'no',
                 'Id_usuario' => null
             ];
@@ -53,7 +53,7 @@ class consultasController extends Controller
         }
         $consultasModel = new consultasModel();
 
-        $nombre = $this->request->getGet('nombre');
+        $nombre =  trim($this->request->getGet('nombre'));
         if (isset($nombre)) {
             $data['consultas'] = $consultasModel->where('visto_consulta', $vistos)->groupStart()->like('Asunto_consulta', $nombre)->orLike('Nombre_consulta', $nombre)->orLike('Apellido_consulta', $nombre)->groupEnd()->orderBy('Id_consulta', "ASC")->paginate(10);
             $data["pager"] = $consultasModel->pager;

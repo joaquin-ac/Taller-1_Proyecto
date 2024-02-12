@@ -139,7 +139,7 @@ class carritoController extends Controller
                 'Id_usuario' => $session['Id_usuario'],
                 'Id_domicilio' => $session['Id_domicilio'],
                 'Importe_total_factura' => $this->getImporteTotal($session['productosCarrito']),
-                'Forma_pago_factura' => $this->request->getVar('metodoPago'),
+                'Forma_pago_factura' => trim($this->request->getVar('metodoPago')),
                 'Fecha_factura' => $date
             ];
 

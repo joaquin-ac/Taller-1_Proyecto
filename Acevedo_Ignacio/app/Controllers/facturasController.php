@@ -16,13 +16,13 @@ class facturasController extends Controller
             return $this->response->redirect('/Acevedo_ignacio');
         }
 
-        $desde = $this->request->getGet('Desde')? : '2000-01-01';
-        $hasta = $this->request->getGet('Hasta')? : date('Y-m-d');
+        $desde =  $this->request->getGet('Desde')? : '2000-01-01';
+        $hasta =  $this->request->getGet('Hasta')? : date('Y-m-d');
 
         //validar fecha
         if($desde <= $hasta && $hasta <= date('Y-m-d')) {
 
-            $id = $this->request->getGet('id');
+            $id =  $this->request->getGet('id');
             if (isset($id)) {
                 $data['facturas'] = $facturasModel->where('Id_factura', $id)->orGroupStart()->where('Id_usuario', $id)->groupEnd()->orderBy('Fecha_factura', "DESC")->paginate(10);
                 $data["pager"] = $facturasModel->pager;

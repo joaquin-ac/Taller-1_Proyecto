@@ -14,7 +14,7 @@ class productosController extends Controller
     {
         $this->categoria = new categoriasModel();
         $this->producto = new productosModel();
-        $this->producto->join("Categoria", "Producto.Id_categoria = Categoria.Id_categoria", "LEFT");
+        $this->producto->join("categoria", "producto.Id_categoria = categoria.Id_categoria", "LEFT");
     }
 
     public function index($dadoBaja = 'si')
@@ -25,7 +25,7 @@ class productosController extends Controller
             return $this->response->redirect('/Acevedo_ignacio');
         }
 
-        $nombre = $this->request->getGet('nombre');
+        $nombre = trim($this->request->getGet('nombre'));
         if (isset($nombre) && $nombre != '') {
             $data['productos'] = $this->producto->where('Activo_producto', $dadoBaja)->groupStart()->like('Nombre_producto', $nombre)->orLike('Nombre_categoria', $nombre)->groupEnd()->orderBy('Id_producto', "ASC")->paginate(10);
             $data['categorias'] = $this->categoria->findAll();
@@ -72,11 +72,11 @@ class productosController extends Controller
             }
 
             $data = [
-                'Nombre_producto' => $this->request->getVar('Nombre'),
-                'Descripcion_producto' => $this->request->getVar('Descripcion'),
-                'Precio_producto' => $this->request->getVar('Precio'),
-                'Cantidad_producto' => $this->request->getVar('Cantidad'),
-                'Id_categoria' => $this->request->getVar('Categoria'),
+                'Nombre_producto' => trim($this->request->getVar('Nombre')),
+                'Descripcion_producto' => trim($this->request->getVar('Descripcion')),
+                'Precio_producto' => trim($this->request->getVar('Precio')),
+                'Cantidad_producto' => trim($this->request->getVar('Cantidad')),
+                'Id_categoria' => trim($this->request->getVar('Categoria')),
                 'url_imagen_producto' => $name,
                 'Activo_producto' => 'si',
             ];
@@ -117,7 +117,7 @@ class productosController extends Controller
         helper(['form']);
         $producto = $this->producto->where('Id_producto', $id)->first();
 
-        if ($this->request->getVar('Nombre') == $producto['Nombre_producto']) {
+        if (trim($this->request->getVar('Nombre')) == $producto['Nombre_producto']) {
             $rules = [
                 'Descripcion' => 'required|min_length[2]|max_length[100]',
                 'Precio' => 'required|decimal',
@@ -168,13 +168,13 @@ class productosController extends Controller
             }
 
             $data = [
-                'Nombre_producto' => $this->request->getVar('Nombre'),
-                'Descripcion_producto' => $this->request->getVar('Descripcion'),
-                'Precio_producto' => $this->request->getVar('Precio'),
-                'Cantidad_producto' => $this->request->getVar('Cantidad'),
-                'Id_categoria' => $this->request->getVar('Categoria'),
+                'Nombre_producto' => trim($this->request->getVar('Nombre')),
+                'Descripcion_producto' => trim($this->request->getVar('Descripcion')),
+                'Precio_producto' => trim($this->request->getVar('Precio')),
+                'Cantidad_producto' => trim($this->request->getVar('Cantidad')),
+                'Id_categoria' => trim($this->request->getVar('Categoria')),
                 'url_imagen_producto' => $nameimagen,
-                'Activo_producto' => $this->request->getVar('Activo'),
+                'Activo_producto' => trim($this->request->getVar('Activo')),
             ];
             $this->producto->update($id, $data);
             session()->setFlashdata('msg', 'Producto correctamente actualizado.');

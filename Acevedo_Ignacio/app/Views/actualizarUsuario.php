@@ -81,7 +81,7 @@
                         <div class="form-group">
                             <label>Rol</label>
                             <select name="Rol" id="Rol" class="form-control" required>
-                                <option value="<?= $usuario['Nombre_rol'] ?>" selected hidden>
+                                <option value="<?= $usuario['Id_rol'] ?>" selected hidden>
                                     <?= $usuario['Nombre_rol'] ?>
                                 </option>
                                 <?php foreach ($roles as $rol) { ?>

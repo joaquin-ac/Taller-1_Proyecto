@@ -2,7 +2,7 @@
 namespace App\Controllers;  
 use CodeIgniter\Controller;
 use App\Models\usuariosModel;
-  
+use App\Models\rolModel;
 class loginController extends Controller
 {
     public function index()
@@ -15,8 +15,8 @@ class loginController extends Controller
     {
         $session = session();
         $userModel = new usuariosModel();
-        $email = $this->request->getVar('email');
-        $password = $this->request->getVar('pass');
+        $email = trim($this->request->getVar('email'));
+        $password = trim($this->request->getVar('pass'));
         helper(['form']);
         $data = $userModel->where('Correo_usuario', $email)->first();
         
@@ -33,7 +33,9 @@ class loginController extends Controller
                 }
 
                 $admin = false;
-                if ($data['Id_rol'] == 2){
+                $rolModel = new rolModel();
+                $rolCli = $rolModel->where('Nombre_rol', 'Admin')->first();
+                if ($data['Id_rol'] == $rolCli['Id_rol']){
                     $admin = true;
                 }
                 

@@ -34,13 +34,13 @@ class editarUserController extends Controller
             'Pais'          => 'required|min_length[2]|max_length[50]'
         ];
 
-        if ($this->request->getVar('Telefono') != session()->get('Telefono_usuario')) {
+        if (trim($this->request->getVar('Telefono')) != session()->get('Telefono_usuario')) {
             $rules['Telefono'] = 'required|min_length[6]|max_length[12]|numeric|is_unique[usuario.Telefono_usuario]';
         }
-        if ($this->request->getVar('Correo') != session()->get('Correo_usuario')) {
+        if (trim($this->request->getVar('Correo')) != session()->get('Correo_usuario')) {
             $rules['Correo'] = 'required|min_length[4]|max_length[100]|valid_email|is_unique[usuario.Correo_usuario]';
         }
-        if ($this->request->getVar('DNI') != session()->get('Dni_usuario')) {
+        if (trim($this->request->getVar('DNI')) != session()->get('Dni_usuario')) {
             $rules['DNI'] = 'required|min_length[6]|max_length[10]|numeric|is_unique[usuario.Dni_usuario]';
         }
         
@@ -50,15 +50,15 @@ class editarUserController extends Controller
 
         if ($this->validate($rules)) {
 
-            if  ($domicilio['Calle_domicilio'] != $this->request->getVar('Calle') || $domicilio['Numero_domicilio'] != $this->request->getVar('Numero') || $domicilio['Codigo_postal_domicilio'] != $this->request->getVar('Codigo_postal') || $domicilio['Localidad_domicilio'] != $this->request->getVar('Localidad') || $domicilio['Provincia_domicilio'] != $this->request->getVar('Provincia') || $domicilio['Pais_domicilio'] != $this->request->getVar('Pais')){
+            if  ($domicilio['Calle_domicilio'] != trim($this->request->getVar('Calle')) || $domicilio['Numero_domicilio'] != trim($this->request->getVar('Numero')) || $domicilio['Codigo_postal_domicilio'] != trim($this->request->getVar('Codigo_postal')) || $domicilio['Localidad_domicilio'] != trim($this->request->getVar('Localidad')) || $domicilio['Provincia_domicilio'] != trim($this->request->getVar('Provincia')) || $domicilio['Pais_domicilio'] != trim($this->request->getVar('Pais'))){
 
                 $dataDomicilio = [
-                    'Calle_domicilio'     => $this->request->getVar('Calle'),
-                    'Numero_domicilio'     => $this->request->getVar('Numero'),
-                    'Codigo_postal_domicilio'     => $this->request->getVar('Codigo_postal'),
-                    'Localidad_domicilio'     => $this->request->getVar('Localidad'),
-                    'Provincia_domicilio'     => $this->request->getVar('Provincia'),
-                    'Pais_domicilio'     => $this->request->getVar('Pais'),
+                    'Calle_domicilio'     => trim($this->request->getVar('Calle')),
+                    'Numero_domicilio'     => trim($this->request->getVar('Numero')),
+                    'Codigo_postal_domicilio'     => trim($this->request->getVar('Codigo_postal')),
+                    'Localidad_domicilio'     => trim($this->request->getVar('Localidad')),
+                    'Provincia_domicilio'     => trim($this->request->getVar('Provincia')),
+                    'Pais_domicilio'     => trim($this->request->getVar('Pais')),
                 ];
 
                 $id_Domicilio_Actualizado = $domicilioModel->insert($dataDomicilio);
@@ -67,13 +67,13 @@ class editarUserController extends Controller
             $userModel = new usuariosModel();
             $usuario = $userModel->find(session()->get('Id_usuario'));
             $dataUser = [
-                'Nombre_usuario'     => $this->request->getVar('Nombre'),
-                'Apellido_usuario'    => $this->request->getVar('Apellido'),
-                'Telefono_usuario'    => $this->request->getVar('Telefono'),
-                'Correo_usuario'    => $this->request->getVar('Correo'),
-                'Dni_usuario'    => $this->request->getVar('DNI'),
-                'Activo_usuario' => 'si',
-                'Id_rol' => '1',
+                'Nombre_usuario'     => trim($this->request->getVar('Nombre')),
+                'Apellido_usuario'    => trim($this->request->getVar('Apellido')),
+                'Telefono_usuario'    => trim($this->request->getVar('Telefono')),
+                'Correo_usuario'    => trim($this->request->getVar('Correo')),
+                'Dni_usuario'    => trim($this->request->getVar('DNI')),
+                'Activo_usuario' => $usuario['Activo_usuario'],
+                'Id_rol' => $usuario['Id_rol'],
                 'Password_usuario' => $usuario['Password_usuario'],
                 'Id_domicilio' => $id_Domicilio_Actualizado
             ];
@@ -131,14 +131,14 @@ class editarUserController extends Controller
             'confirmPassword' => 'matches[newPass]'
         ];
 
-        $password = $this->request->getVar('oldPass');
+        $password = trim($this->request->getVar('oldPass'));
         $pass = $usuario['Password_usuario'];
         $authenticatePassword = password_verify($password, $pass);
 
         if ($authenticatePassword) {
             if ($this->validate($rules)) {
 
-                $newPassword = password_hash($this->request->getVar('newPass'), PASSWORD_BCRYPT);
+                $newPassword = password_hash(trim($this->request->getVar('newPass')), PASSWORD_BCRYPT);
                 $usuario['Password_usuario'] = $newPassword;
                 //$session['isAdmin'] = $session['isAdmin'] ? 'si' : 'no';
                 $userModel->save($usuario);
@@ -163,8 +163,8 @@ class editarUserController extends Controller
             return $this->response->redirect('/Acevedo_ignacio');
         }
 
-        $desde = $this->request->getGet('Desde')? : '2000-01-01';
-        $hasta = $this->request->getGet('Hasta')? : date('Y-m-d');
+        $desde = trim($this->request->getGet('Desde'))? : '2000-01-01';
+        $hasta = trim($this->request->getGet('Hasta'))? : date('Y-m-d');
         $facturasModel = new facturasModel();
 
         $id = $session['Id_usuario'];

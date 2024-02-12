@@ -11,8 +11,8 @@ class catalogoController extends Controller
     {
         $productosModel = new productosModel();
         $productosModel->join("categoria","producto.Id_categoria = categoria.Id_categoria","LEFT");
-        $nombre = $this->request->getGet('nombre');
-        $order = $this->request->getGet('order') ?? "Nombre_categoria";
+        $nombre = trim($this->request->getGet('nombre'));
+        $order = trim($this->request->getGet('order')) ?? "Nombre_categoria";
         $data['order'] = $order;
         $data['nombre'] = $nombre;
         if (isset($nombre) && $nombre != '') {
